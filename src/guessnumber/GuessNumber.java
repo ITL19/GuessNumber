@@ -9,7 +9,14 @@ package guessnumber;
 
 public class GuessNumber {
 
-    
+
+    public static void print(String string){
+        System.out.println(string);
+    }
+    /**
+     * @param args the command line arguments
+     */
+
     public static void main(String[] args) {
         again = "yes"
 money = 0
