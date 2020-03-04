@@ -11,6 +11,9 @@ package guessnumber;
  */
 public class GuessNumber {
 
+    public static void print(String string){
+        System.out.println(string);
+    }
     /**
      * @param args the command line arguments
      */
