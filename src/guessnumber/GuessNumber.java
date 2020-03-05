@@ -6,19 +6,33 @@ March 4th 2020
  */
 package guessnumber;
 
+import java.util.Scanner;
+
 
 public class GuessNumber {
-
-
-    public static void print(String string){
-        System.out.println(string);
+    public static int Int(String in){
+        return Integer.parseInt(in);
+    }
+    public static String input(String str){
+        print(str);
+        Scanner scan = new Scanner(System.in);
+        return scan.nextLine();
+    }
+    public static void print(String str, Object param, Object param2, Object param3){
+        System.out.println(str+param+param2+param3);
+    }
+    public static void print(String str, Object param){
+        System.out.println(str+param);
+    }
+    public static void print(String str){
+        System.out.println(str);
     }
     /**
      * @param args the command line arguments
      */
 
     public static void main(String[] args) {
-        again = "yes"
+        String again = "yes"
 money = 0
 print("Welcome to the Slot Machine!")
 
@@ -38,13 +52,12 @@ while (again.lower() == "yes"):
         print("No matching numbers! :(")
         money -= 50
 
-    again = str(input("Would you like to go again?: "))
-    while (again.lower() != "yes" and again.lower() != "no"):
-        print("Yes or No only please.")
-        again = str(input("Enter a yes or a no "))
+        again = input("Would you like to go again?: ");
+        while (again.lower() != "yes" and again.lower() != "no"){
+            print("Yes or No only please.");
+            again = input("Enter a yes or a no ");
 
-print("Goodbye!")
-        
+            print("Goodbye!");
+        }
     }
-    
 }
